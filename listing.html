@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="./scripts/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./scripts/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./scripts/css/main.css">
+</head>
+
+<body>
+
+	<div class="our-team">
+		<!-- section 1 -->
+		<div class="subpage-banner">
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<!-- put your col here -->
+						<div class="col-md my-auto">
+							<h1>Meet Our Team</h1>
+						</div>
+						<!-- put your col here -->
+						<div class="col-md">
+							<img src="./assets/images/banner-img.png" alt="" class="w-100 img-fluid">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="listing-demo">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="srch-filter">
+							<div class="srch-heading">Search</div>
+							<select class="srch-list" id="hospital">
+								<option class="placeholder-txt" selected disabled hidden>Select a hospital</option>
+								<option value="2">Hospital Kuala Lumpur</option>
+								<option value="3">Hospital Cheras</option>
+								<option value="4">Hospital Ayer Keroh</option>
+								<option value="5">Hospital Penang</option>
+							</select>
+							<select class="srch-list" id="specialties">
+								<option class="placeholder-txt" selected disabled hidden>Select a Specialty</option>
+								<option value="12">Oncology</option>
+								<option value="13">General Surgery</option>
+								<option value="14">Neurology</option>
+								<option value="15">Cardiology</option>
+							</select>
+							<select class="srch-list" id="doctor-name">
+								<option class="placeholder-txt" selected disabled hidden>Select a Doctor</option>
+								<option value="22">Johnny Sins</option>
+								<option value="23">Spooderman</option>
+								<option value="24">911</option>
+								<option value="25">911 GT</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-lg-9">
+						<div class="card-listing">
+							<!-- <div class="row">
+								<div class="col-xl-6 card-listing-card">
+									<div class="row">
+										<div class="col-3 clc-img">
+											<img src="/assets/images/johnny.jpg" alt="" class="img-fluid">
+										</div>
+										<div class="col-9 clc-desc">
+											<div class="clc-desc-upper">
+												<h3>Johnny Sins</h3>
+												<div class="clc-desc-spclt">Cardiology</div>
+											</div>
+											<div class="clc-desc-lower">
+												<div class="clc-desc-hspt">PHKL
+													<span class="clc-desc-status">Resident</span>
+												</div>
+												<div class="row clc-desc-button">
+													<div class="col-6 clc-btn-view">view</div>
+													<div class="col-6 clc-btn-apmnt">appointment</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div> -->
+							<!-- <div class="col-xl-6 card-listing-card">
+									<div class="row">
+										<div class="col-3 clc-img">
+											<img src="/assets/images/johnny.jpg" alt="" class="img-fluid">
+										</div>
+										<div class="col-9 clc-desc">
+											<h3>Johnny Sins</h3>
+											<div class="clc-desc-spclt">Cardiology</div>
+											<div class="clc-desc-hspt">PHKL</div>
+											<div class="clc-desc-status">Resident</div>
+											<div class="row clc-desc-button">
+												<div class="col-6 clc-btn-view">view</div>
+												<div class="col-6 clc-btn-apmnt">appointment</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 card-listing-card">
+									<div class="row">
+										<div class="col-3 clc-img">
+											<img src="/assets/images/johnny.jpg" alt="" class="img-fluid">
+										</div>
+										<div class="col-9 clc-desc">
+											<h3>Johnny Sins</h3>
+											<div class="clc-desc-spclt">Cardiology</div>
+											<div class="clc-desc-hspt">PHKL</div>
+											<div class="clc-desc-status">Resident</div>
+											<div class="row clc-desc-button">
+												<div class="col-6 clc-btn-view">view</div>
+												<div class="col-6 clc-btn-apmnt">appointment</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 card-listing-card">
+									<div class="row">
+										<div class="col-3 clc-img">
+											<img src="/assets/images/johnny.jpg" alt="" class="img-fluid">
+										</div>
+										<div class="col-9 clc-desc">
+											<h3>Johnny Sins</h3>
+											<div class="clc-desc-spclt">Cardiology</div>
+											<div class="clc-desc-hspt">PHKL</div>
+											<div class="clc-desc-status">Resident</div>
+											<div class="row clc-desc-button">
+												<div class="col-6 clc-btn-view">view</div>
+												<div class="col-6 clc-btn-apmnt">appointment</div>
+											</div>
+										</div>
+									</div>
+								</div> -->
+							<!-- </div> -->
+
+							<div class="card-listing-card">
+								<div class="clc">
+									<div class="clc-img">
+										<img src="/assets/images/johnny.jpg" alt="" class="img-fluid">
+									</div>
+									<div class="clc-desc">
+										<div class="clc-desc-upper">
+											<h3 class="clc-desc-name">Johnny Sins</h3>
+											<div class="clc-desc-spclt">Cardiology</div>
+											<div class="clc-desc-hspt">Hospital Kuala Lumpur
+												<span class="clc-desc-status">Resident</span>
+											</div>
+										</div>
+										<div class="clc-desc-lower d-md-flex d-none">
+											<div class="clc-desc-button">
+												<div class="clc-btn-view">
+													<img src="/assets/images/doc-profile-icon.webp" alt="">
+													view <br>profile
+												</div>
+												<div class="clc-btn-apmnt">
+													<img src="/assets/images/doc-apt-icon.webp" alt="">
+													make an <br>appointment
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row clc-mobile-button">
+									<div class="col-12 clc-desc-button d-md-none d-flex">
+										<div class="clc-btn-view">
+											<img src="/assets/images/doc-profile-icon.webp" alt="">
+											view <br>profile
+										</div>
+										<div class="clc-btn-apmnt">
+											<img src="/assets/images/doc-apt-icon.webp" alt="">
+											make an <br>appointment
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-listing-card">
+								<div class="clc">
+									<div class="clc-img">
+										<img src="/assets/images/World_Trade_Center,_New_York_City_-_aerial_view_(March_2001).jpg" alt="" class="img-fluid">
+									</div>
+									<div class="clc-desc">
+										<div class="clc-desc-upper">
+											<h3 class="clc-desc-name">911</h3>
+											<div class="clc-desc-spclt">Neurology</div>
+											<div class="clc-desc-hspt">Hospital Ayer Keroh
+												<span class="clc-desc-status">Resident</span>
+											</div>
+										</div>
+										<div class="clc-desc-lower d-md-flex d-none">
+											<div class="clc-desc-button">
+												<div class="clc-btn-view">
+													<img src="/assets/images/doc-profile-icon.webp" alt="">
+													view <br>profile
+												</div>
+												<div class="clc-btn-apmnt">
+													<img src="/assets/images/doc-apt-icon.webp" alt="">
+													make an <br>appointment
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row clc-mobile-button">
+									<div class="col-12 clc-desc-button d-md-none d-flex">
+										<div class="clc-btn-view">
+											<img src="/assets/images/doc-profile-icon.webp" alt="">
+											view <br>profile
+										</div>
+										<div class="clc-btn-apmnt">
+											<img src="/assets/images/doc-apt-icon.webp" alt="">
+											make an <br>appointment
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-listing-card">
+								<div class="clc">
+									<div class="clc-img">
+										<img src="/assets/images/spooderman.jpeg" alt="" class="img-fluid">
+									</div>
+									<div class="clc-desc">
+										<div class="clc-desc-upper">
+											<h3 class="clc-desc-name">Spooderman</h3>
+											<div class="clc-desc-spclt">General Surgery</div>
+											<div class="clc-desc-hspt">Hospital Cheras
+												<span class="clc-desc-status">Resident</span>
+											</div>
+										</div>
+										<div class="clc-desc-lower d-md-flex d-none">
+											<div class="clc-desc-button">
+												<div class="clc-btn-view">
+													<img src="/assets/images/doc-profile-icon.webp" alt="">
+													view <br>profile
+												</div>
+												<div class="clc-btn-apmnt">
+													<img src="/assets/images/doc-apt-icon.webp" alt="">
+													make an <br>appointment
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row clc-mobile-button">
+									<div class="col-12 clc-desc-button d-md-none d-flex">
+										<div class="clc-btn-view">
+											<img src="/assets/images/doc-profile-icon.webp" alt="">
+											view <br>profile
+										</div>
+										<div class="clc-btn-apmnt">
+											<img src="/assets/images/doc-apt-icon.webp" alt="">
+											make an <br>appointment
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-listing-card">
+								<div class="clc">
+									<div class="clc-img">
+										<img src="/assets/images/download.jpeg" alt="" class="img-fluid">
+									</div>
+									<div class="clc-desc">
+										<div class="clc-desc-upper">
+											<h3 class="clc-desc-name">911 GT</h3>
+											<div class="clc-desc-spclt">Oncology</div>
+											<div class="clc-desc-hspt">Hospital Penang
+												<span class="clc-desc-status">Resident</span>
+											</div>
+										</div>
+										<div class="clc-desc-lower d-md-flex d-none">
+											<div class="clc-desc-button">
+												<div class="clc-btn-view">
+													<img src="/assets/images/doc-profile-icon.webp" alt="">
+													view <br>profile
+												</div>
+												<div class="clc-btn-apmnt">
+													<img src="/assets/images/doc-apt-icon.webp" alt="">
+													make an <br>appointment
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row clc-mobile-button">
+									<div class="col-12 clc-desc-button d-md-none d-flex">
+										<div class="clc-btn-view">
+											<img src="/assets/images/doc-profile-icon.webp" alt="">
+											view <br>profile
+										</div>
+										<div class="clc-btn-apmnt">
+											<img src="/assets/images/doc-apt-icon.webp" alt="">
+											make an <br>appointment
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="ab-us container-fluid">
+			<div class="container">
+				<p style="color: #307fde;"><strong>About Us</strong></p>
+				<div class="fom row my-3">
+					<div class="col-md-10 text-start">
+						<h2>Why Choose Us?</h2>
+					</div>
+					<div class="col-md-2 text-end d-md-block" style="display: none;"><a href="/listing.html">Find Out More -></a>
+					</div>
+				</div>
+				<div class="hospital-icon row">
+					<div class="col-lg-2 col-md-4 col-3">
+						<img src="/assets/images/parking-icon.webp" alt="" class="my-2">
+						<h3>200</h3>
+						<p>parking bays</p>
+					</div>
+					<div class="col-lg-2 col-md-4 col-3">
+						<img src="/assets/images/parking-icon.webp" alt="" class="my-2">
+						<h3>200</h3>
+						<p>parking bays</p>
+					</div>
+					<div class="col-lg-2 col-md-4 col-3">
+						<img src="/assets/images/parking-icon.webp" alt="" class="my-2">
+						<h3>200</h3>
+						<p>parking bays</p>
+					</div>
+					<div class="col-lg-2 col-md-4 col-3">
+						<img src="/assets/images/parking-icon.webp" alt="" class="my-2">
+						<h3>200</h3>
+						<p>parking bays</p>
+					</div>
+					<div class="col-lg-2 col-md-4 col-3">
+						<img src="/assets/images/parking-icon.webp" alt="" class="my-2">
+						<h3>200</h3>
+						<p>parking bays</p>
+					</div>
+					<div class="col-lg-2 col-md-4 col-3">
+						<img src="/assets/images/parking-icon.webp" alt="" class="my-2">
+						<h3>200</h3>
+						<p>parking bays</p>
+					</div>
+				</div>
+				<div class="fom row d-md-none">
+					<div class="col-12 text-end">
+						<a href="/listing.html">Find Out More -></a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="swp-content">
+								<div class="swp-content-title">
+									<div class="title-clr-green">////</div>
+								</div>
+								<div class="swp-content-desc">
+									Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota
+									Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota
+								</div>
+								<div class="swp-content-sg">Peter Baking</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swp-content">
+								<div class="swp-content-title">
+									<div class="title-clr-red">////</div>
+								</div>
+								<div class="swp-content-desc">
+									Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota
+									Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota
+								</div>
+								<div class="swp-content-sg">Peter Baking</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swp-content">
+								<div class="swp-content-title">
+									<div class="title-clr-blue">////</div>
+								</div>
+								<div class="swp-content-desc">
+									Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota
+									Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota
+								</div>
+								<div class="swp-content-sg">Peter Baking</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swp-content">
+								Slide 4
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swp-content">
+								Slide 5
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swp-content">
+								Slide 6
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swp-content">
+								Slide 7
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swp-content">
+								Slide 8
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swp-content">
+								Slide 9
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-scrollbar"></div>
+			</div>
+		</div>
+	</div>
+
+
+
+	</div>
+
+	<script src="./scripts/js/jquery-3.7.1.min.js"></script>
+	<script src="./scripts/js/bootstrap.bundle.min.js"></script>
+	<script src="./scripts/js/swiper-bundle.min.js"></script>
+	<!-- <script src="./scripts/js/main2.js"></script> -->
+	<script src="./scripts/js/main2.js"></script>
+	<script src="./scripts/js/main.js"></script>
+</body>
+
+</html>
