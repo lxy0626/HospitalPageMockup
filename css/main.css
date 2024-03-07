@@ -1,0 +1,461 @@
+@import url("https://fonts.cdnfonts.com/css/proxima-nova-condensed");
+@import url("https://fonts.cdnfonts.com/css/huntesla-gloficka");
+:root {
+  --red: #f85e5e;
+  --pink: #ff79d8;
+  --orange: #eba100;
+  --blue: #307fde;
+  --lightblue: #4fa8e6;
+  --green: #3dad45;
+  --lightgreen: #4ab649;
+  --space-3xs: clamp(0.25rem, calc(0.23rem + 0.08vw), 0.31rem);
+  --space-2xs: clamp(0.44rem, calc(0.41rem + 0.16vw), 0.56rem);
+  --space-xs: clamp(0.69rem, calc(0.64rem + 0.23vw), 0.88rem);
+  --space-s: clamp(0.88rem, calc(0.81rem + 0.31vw), 1.13rem);
+  --space-m: clamp(1.31rem, calc(1.22rem + 0.47vw), 1.69rem);
+  --space-l: clamp(1.75rem, calc(1.63rem + 0.63vw), 2.25rem);
+  --space-xl: clamp(2.63rem, calc(2.44rem + 0.94vw), 3.38rem);
+  --space-2xl: clamp(3.5rem, calc(3.25rem + 1.25vw), 4.5rem);
+  --space-3xl: clamp(5.25rem, calc(4.88rem + 1.88vw), 6.75rem);
+  --space-3xs-2xs: clamp(0.25rem, calc(0.17rem + 0.39vw), 0.56rem);
+  --space-2xs-xs: clamp(0.44rem, calc(0.33rem + 0.55vw), 0.88rem);
+  --space-xs-s: clamp(0.69rem, calc(0.58rem + 0.55vw), 1.13rem);
+  --space-s-m: clamp(0.88rem, calc(0.67rem + 1.02vw), 1.69rem);
+  --space-m-l: clamp(1.31rem, calc(1.08rem + 1.17vw), 2.25rem);
+  --space-l-xl: clamp(1.75rem, calc(1.34rem + 2.03vw), 3.38rem);
+  --space-xl-2xl: clamp(2.63rem, calc(2.16rem + 2.34vw), 4.5rem);
+  --space-2xl-3xl: clamp(3.5rem, calc(2.69rem + 4.06vw), 6.75rem);
+  --space-s-l: clamp(0.88rem, calc(0.53rem + 1.72vw), 2.25rem);
+  --step--2: clamp(0.74rem, calc(0.73rem + 0.06vw), 0.79rem);
+  --step--1: clamp(0.83rem, calc(0.82rem + 0.07vw), 0.89rem);
+  --step-0: clamp(0.94rem, calc(0.92rem + 0.08vw), 1rem);
+  --step-1: clamp(1.06rem, calc(1.04rem + 0.09vw), 1.13rem);
+  --step-2: clamp(1.19rem, calc(1.17rem + 0.1vw), 1.27rem);
+  --step-3: clamp(1.34rem, calc(1.31rem + 0.11vw), 1.42rem);
+  --step-4: clamp(1.5rem, calc(1.48rem + 0.13vw), 1.6rem);
+  --step-5: clamp(1.69rem, calc(1.66rem + 0.14vw), 1.8rem);
+}
+
+.messages-section {
+  background: var(--blue);
+}
+.messages-section .item-container {
+  position: relative;
+}
+.messages-section .item-container .message-item {
+  position: relative;
+  width: 200px;
+  height: auto;
+  transition: all 0.5s ease;
+}
+.messages-section .item-container .message-item img {
+  width: 100%;
+  height: 100%;
+}
+.messages-section .item-container .message-item .message-text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.messages-section .item-container .message-item.active {
+  position: absolute;
+}
+
+.listing-demo .srch-filter {
+  position: sticky;
+  top: 0;
+  margin-top: 0.5rem;
+}
+.listing-demo .srch-filter .srch-heading {
+  font-size: 20px;
+  color: var(--blue);
+  font-weight: bold;
+}
+.listing-demo .srch-filter .srch-list {
+  margin: 0.3rem;
+  width: 100%;
+  border-radius: 5px;
+  border-color: var(--blue);
+  height: 35px;
+}
+.listing-demo .srch-filter .srch-list .placeholder-txt {
+  font-weight: 300;
+  color: var(--lightblue);
+}
+.listing-demo .card-listing {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media screen and (width < 992px) {
+  .listing-demo .card-listing {
+    grid-template-columns: 100%;
+  }
+}
+.listing-demo .card-listing .card-listing-card {
+  border: 1px hidden white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 12px #d5d5d5, -5px -5px 12px #ebebeb;
+  margin: 10px;
+}
+.listing-demo .card-listing .card-listing-card .clc-mobile-button {
+  font-size: 0.75rem;
+  color: white;
+  line-height: 0.7rem;
+}
+.listing-demo .card-listing .card-listing-card .clc-mobile-button .clc-desc-button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.listing-demo .card-listing .card-listing-card .clc-mobile-button .clc-desc-button .clc-btn-view {
+  width: 100%;
+  background-color: #ffbc29;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.375rem 0.75rem;
+}
+.listing-demo .card-listing .card-listing-card .clc-mobile-button .clc-desc-button .clc-btn-view > img {
+  width: 26px;
+  align-self: center;
+  padding-bottom: 5px;
+}
+.listing-demo .card-listing .card-listing-card .clc-mobile-button .clc-desc-button .clc-btn-apmnt {
+  width: 100%;
+  background-color: #4cb748;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.375rem 0.75rem;
+}
+.listing-demo .card-listing .card-listing-card .clc-mobile-button .clc-desc-button .clc-btn-apmnt > img {
+  width: 26px;
+  align-self: center;
+  padding-bottom: 5px;
+}
+.listing-demo .card-listing .card-listing-card .clc {
+  display: flex;
+  height: 100%;
+}
+.listing-demo .card-listing .card-listing-card .clc .clc-img {
+  padding: 0px;
+  width: 195px;
+}
+.listing-demo .card-listing .card-listing-card .clc .clc-img > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.listing-demo .card-listing .card-listing-card .clc .clc-desc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.listing-demo .card-listing .card-listing-card .clc .clc-desc .clc-desc-upper {
+  height: 100%;
+  padding: var(--space-s) var(--space-xs);
+}
+.listing-demo .card-listing .card-listing-card .clc .clc-desc .clc-desc-upper h3 {
+  color: var(--blue);
+  font-weight: bold;
+  font-size: var(--step-2);
+  margin-bottom: 0px;
+}
+.listing-demo .card-listing .card-listing-card .clc .clc-desc .clc-desc-upper .clc-desc-spclt {
+  padding-top: 0px;
+  padding-bottom: 1rem;
+  font-size: var(--step-0);
+}
+.listing-demo .card-listing .card-listing-card .clc .clc-desc .clc-desc-upper .clc-desc-hspt {
+  color: var(--blue);
+  font-weight: bold;
+  font-size: var(--step-0);
+}
+.listing-demo .card-listing .card-listing-card .clc .clc-desc .clc-desc-upper .clc-desc-status {
+  border: 1px hidden white;
+  border-radius: 50px;
+  background-color: #00b4eb;
+  color: white;
+  padding: var(--space-3xs) var(--space-2xs);
+  width: 75px;
+  font-weight: normal;
+  font-size: var(--step--1);
+}
+.listing-demo .card-listing .card-listing-card .clc .clc-desc .clc-desc-lower {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+  font-size: 0.75rem;
+  color: white;
+  line-height: 0.7rem;
+}
+.listing-demo .card-listing .card-listing-card .clc .clc-desc .clc-desc-lower .clc-desc-button {
+  width: 100%;
+  display: flex;
+}
+.listing-demo .card-listing .card-listing-card .clc .clc-desc .clc-desc-lower .clc-desc-button .clc-btn-view {
+  width: 100%;
+  background-color: #ffbc29;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.375rem 0.75rem;
+}
+.listing-demo .card-listing .card-listing-card .clc .clc-desc .clc-desc-lower .clc-desc-button .clc-btn-view > img {
+  width: 26px;
+  align-self: center;
+  padding-bottom: 5px;
+}
+.listing-demo .card-listing .card-listing-card .clc .clc-desc .clc-desc-lower .clc-desc-button .clc-btn-apmnt {
+  width: 100%;
+  background-color: #4cb748;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.375rem 0.75rem;
+}
+.listing-demo .card-listing .card-listing-card .clc .clc-desc .clc-desc-lower .clc-desc-button .clc-btn-apmnt > img {
+  width: 26px;
+  align-self: center;
+  padding-bottom: 5px;
+}
+
+.our-team {
+  position: relative;
+  background-color: #f1f8fe;
+}
+.our-team a {
+  text-decoration: none;
+}
+.our-team h2 {
+  color: var(--blue);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.our-team .subpage-banner {
+  background-color: var(--lightgreen);
+}
+.our-team .subpage-banner h1 {
+  color: white;
+  font-weight: bold;
+}
+.our-team .our-multi-team {
+  padding: 2rem 0rem;
+}
+.our-team .doctor-profile {
+  z-index: -1;
+  padding: 3rem 0rem;
+}
+.our-team .doctor-profile .doc-img {
+  z-index: 0;
+  margin-bottom: 82px;
+  scale: 1.3;
+}
+.our-team .doctor-profile .img-copy {
+  z-index: 0;
+  margin-bottom: 0px;
+  scale: 1;
+  text-align: center;
+}
+.our-team .doctor-profile .secThreeInner {
+  background-color: var(--lightblue);
+}
+.our-team .doctor-profile .secThreeInner .doc-prof-desc {
+  align-self: center;
+}
+.our-team .doctor-profile h2 {
+  color: white;
+  font-weight: bold;
+}
+.our-team .doctor-profile p {
+  color: white;
+}
+.our-team .doc-card-sec > .row {
+  justify-content: center;
+}
+.our-team .doc-card-sec #demoModal2 .card-pos {
+  font-weight: bold;
+}
+.our-team .doc-card-sec #demoModal2 .mdl-img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.our-team .doc-card {
+  text-align: center;
+  margin: 2rem auto;
+  overflow: hidden;
+  border: 1px hidden white;
+  border-radius: 20px;
+  padding: 0px;
+  background-color: white;
+}
+.our-team .doc-card h3 {
+  color: var(--blue);
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
+  font-weight: bold;
+}
+.our-team .doc-card a {
+  font-weight: bold;
+}
+.our-team .doc-card .doc-card-specialties {
+  font-weight: 600;
+  margin-bottom: 3rem;
+  margin-top: 0rem;
+}
+.our-team .doc-card > img {
+  width: 330px;
+  height: 388px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.our-team .card-info {
+  border: 10px solid var(--blue);
+  border-radius: 25px;
+  position: absolute;
+  text-align: start;
+  max-width: 100%;
+  z-index: 1;
+  background-color: white;
+}
+.our-team .card-info p {
+  color: black;
+}
+.our-team .card-info h2 {
+  color: var(--blue);
+}
+.our-team .card-info > img {
+  margin-bottom: 0px;
+  scale: 1;
+}
+.our-team .hospital-icon {
+  text-align: center;
+}
+.our-team .hospital-icon h3 {
+  font-weight: bold;
+  margin-bottom: 0%;
+}
+.our-team .hospital-icon img {
+  width: 100px;
+}
+.our-team .card-info-desc {
+  align-self: center;
+}
+.our-team .more-info-button a {
+  font-size: small;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  z-index: 2;
+}
+.our-team .ab-us {
+  background-color: #f1f8fe;
+  padding: 1rem 0rem;
+}
+.our-team .ab-us .fom {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.our-team .modal.fade {
+  z-index: 999999;
+  display: none;
+}
+.our-team .modal.fade .modal-header {
+  padding: 0;
+  border: 0;
+}
+.our-team .modal.fade .modal-header .close {
+  z-index: 9;
+  right: 20px;
+  top: 20px;
+  font-size: 32px;
+  opacity: 1;
+  border: none;
+  background: transparent;
+  position: absolute;
+}
+.our-team .modal.fade .modal-header .sr-only {
+  display: none;
+}
+.our-team .modal.fade .modal-body {
+  padding: 0;
+}
+.our-team .mySwiper {
+  height: auto;
+  width: 100%;
+  padding: 1rem;
+}
+.our-team .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  min-height: 125px;
+  height: auto;
+  border: 1px hidden;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.our-team .swiper-slide .swp-content {
+  padding: 25px;
+  align-self: baseline;
+}
+.our-team .swiper-slide .swp-content .swp-content-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+.our-team .swiper-slide .swp-content .swp-content-title .title-clr-green {
+  color: #32b232;
+}
+.our-team .swiper-slide .swp-content .swp-content-title .title-clr-red {
+  color: red;
+}
+.our-team .swiper-slide .swp-content .swp-content-title .title-clr-blue {
+  color: #307fde;
+}
+.our-team .swiper-slide .swp-content .swp-content-desc {
+  font-size: 15px;
+}
+.our-team .swiper-slide .swp-content .swp-content-sg {
+  font-family: "", Courier;
+}
+.our-team .swiper-slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (width < 768px) {
+  .our-team .card-listing {
+    grid-template-columns: 100%;
+  }
+  .our-team .hospital-icon {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    justify-content: center;
+  }
+  .our-team .hospital-icon img {
+    width: 100%;
+  }
+  .our-team .doc-card > img {
+    width: 108px;
+    height: 140px;
+  }
+  .our-team .doctor-profile .doc-img {
+    z-index: 0;
+    margin-bottom: 0px;
+    scale: 1;
+  }
+}/*# sourceMappingURL=main.css.map */
